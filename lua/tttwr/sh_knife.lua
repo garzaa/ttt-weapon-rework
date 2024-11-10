@@ -3,7 +3,7 @@ local ENT = scripted_ents.GetStored("ttt_knife_proj").t
 
 SWEP.Primary.Damage = 40
 SWEP.Secondary.Damage = 60
-ENT.ThrownDamage = 60
+ENT.ThrownDamage = 80
 
 SWEP.StabKill = nil
 ENT.HitPlayer = nil
@@ -451,8 +451,8 @@ function ENT:HitPlayer(victim)
 	end
 
 	local dmg = math.max(
-		self.ThrownDamage or 60,
-		10 + self.StartPos:Distance(self:GetPos()) * (1 / 3)
+		self.ThrownDamage or 80,
+		10 + self.StartPos:Distance(self:GetPos())
 	)
 
 	local kill = victim:Health() < dmg + 1
