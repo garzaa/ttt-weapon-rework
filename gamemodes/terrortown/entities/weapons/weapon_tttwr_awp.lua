@@ -12,6 +12,6 @@ TTTWR.MakeSniper(SWEP,
 
 TTTWR.MakeChargeableSniper(SWEP, 1.5)
 
-SWEP.HeadshotMultiplier = 1.5
+SWEP.HeadshotMultiplier = 2
 
 SWEP.ReloadTime = 4

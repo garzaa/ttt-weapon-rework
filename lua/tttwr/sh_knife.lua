@@ -452,7 +452,7 @@ function ENT:HitPlayer(victim)
 
 	local dmg = math.max(
 		self.ThrownDamage or 80,
-		60 + self.StartPos:Distance(self:GetPos())
+		80 + self.StartPos:Distance(self:GetPos())
 	)
 
 	local kill = victim:Health() < dmg + 1
